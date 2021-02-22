@@ -11,6 +11,10 @@ class GalileanMoons:
         self.fourth=fourth
     
 @app.route("/")
+def home():
+    return render_template("home.html")
+
+@app.route("/first")
 def hello_world():
     return render_template("first_page.html")
 
