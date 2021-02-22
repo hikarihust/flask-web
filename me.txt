@@ -5,3 +5,4 @@ Include images in our HTML site
 Finishing the header and navigation
 HTML forms: sending data
 Creating the footer with multiple columns
+Style the header and menu bar
