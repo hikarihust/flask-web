@@ -51,4 +51,4 @@ Using loops in Jinja2
 Setting up our Microblog project with Flask
     http://127.0.0.1:5000
 Receiving form data using Flask
-    
+Displaying past entries in the Microblog project

@@ -10,13 +10,16 @@ class GalileanMoons:
         self.second=second
         self.third=third
         self.fourth=fourth
+
+entries = []
     
 @app.route("/", methods=["GET", "POST"])
 def home():
     if request.method == "POST":
         entry_content = request.form.get("content")
         formatted_date = datetime.datetime.today().strftime("%Y-%m-%d")
-    return render_template("home.html")
+        entries.append((entry_content, formatted_date))
+    return render_template("home.html", entries=entries)
 
 @app.route("/first")
 def hello_world():
