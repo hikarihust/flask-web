@@ -53,3 +53,27 @@ Setting up our Microblog project with Flask
 Receiving form data using Flask
 Displaying past entries in the Microblog project
 Formatting dates correctly in our entries
+Accessing MongoDB with Compass and Atlas
+    Create New Cluster
+    Cloud Provider & Region
+        AWS, Singapore 
+    Cluster Tier M0 Sandbox (Shared RAM, 512 MB Storage)
+    Cluster Name: Microblog-Application
+    NetWork Access: 0.0.0.0/0  (includes your current IP address)
+    Database Access -> Add New Database User
+        username: quang 
+        pwd: 123456@
+    Cluster - Connect 
+        Connect using MongoDB Compass and download: mongodb-compass-1.25.0-win32-x64.exe
+        mongodb+srv://quang:<password>@microblog-application.jhlkz.mongodb.net/test
+    CREATE DATABASE
+        Database Name: microblog
+        Collection Name: entries
+    microblog->entries->ADD DATA->Insert Document(How to add data)
+        {
+            "db": "MongoDB",
+            "type": "NoSQL",
+            "dbName": "microblog",
+            "collectionName": "entries"
+        } 
+    
