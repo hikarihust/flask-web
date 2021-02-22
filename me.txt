@@ -7,3 +7,4 @@ HTML forms: sending data
 Creating the footer with multiple columns
 Style the header and menu bar
 Style HTML forms and inputs
+Style the micro blog entries
