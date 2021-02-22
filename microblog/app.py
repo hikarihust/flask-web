@@ -85,3 +85,27 @@ def render_data_structures():
 def render_conditionals():
     company = True
     return render_template("conditionals_basics.html", company=company)
+
+@app.route("/for-loop")
+def render_for_loop():
+    planets = [
+        "Mercury",
+        "Venus",
+        "Earch",
+        "Mars",
+        "Jupiter",
+        "Saturn",
+        "Uranus",
+        "Neptune"
+    ]
+    return render_template("for_loop.html", planets=planets)
+
+@app.route("/for-loop/conditionals")
+def render_loops_and_conditionals():
+    user_os = {
+        "Bob Smith": "Windows",
+        "Anne Pun": "MacOS",
+        "Adam Lee": "Linux",
+        "Jose Sal": "Windows",
+    }
+    return render_template("loops_and_conditionals.html", user_os=user_os)
