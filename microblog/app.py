@@ -1,8 +1,15 @@
 import datetime
 from flask import Flask, render_template, request
 from jinja2 import Template
+from pymongo import MongoClient
+import urllib.parse
 
 app = Flask(__name__)
+username = urllib.parse.quote_plus('quang')
+password = urllib.parse.quote_plus("123456@")
+url="mongodb+srv://{}:{}@microblog-application.jhlkz.mongodb.net/test".format(username, password)
+client = MongoClient(url)
+app.db = client.microblog
 
 class GalileanMoons:
     def __init__(self, first, second, third, fourth):
@@ -11,7 +18,7 @@ class GalileanMoons:
         self.third=third
         self.fourth=fourth
 
-entries = []
+entries = []       
     
 @app.route("/", methods=["GET", "POST"])
 def home():
@@ -19,6 +26,7 @@ def home():
         entry_content = request.form.get("content")
         formatted_date = datetime.datetime.today().strftime("%Y-%m-%d")
         entries.append((entry_content, formatted_date))
+        app.db.entries.insert({"content": entry_content, "date": formatted_date})
 
     entries_with_date = [
         (

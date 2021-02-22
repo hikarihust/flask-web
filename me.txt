@@ -76,4 +76,6 @@ Accessing MongoDB with Compass and Atlas
             "dbName": "microblog",
             "collectionName": "entries"
         } 
+Storing Microblog entries in MongoDB
+    pip3 install pymongo[srv]
     
