@@ -3,7 +3,13 @@ from jinja2 import Template
 
 app = Flask(__name__)
 
-
+class GalileanMoons:
+    def __init__(self, first, second, third, fourth):
+        self.first=first
+        self.second=second
+        self.third=third
+        self.fourth=fourth
+    
 @app.route("/")
 def hello_world():
     return render_template("first_page.html")
@@ -49,7 +55,29 @@ def expressions():
         "first_name": first_name,
         "last_name": last_name,
     }
-
     return render_template(
             "expressions.html", **kwargs
         )
+
+@app.route("/data-structures")
+def render_data_structures():
+    movies = [
+        "Leon the Professional",
+        "The Usual Suspects",
+        "A beautiful Mind"
+    ]
+    car = {
+        "brand": "Tesla",
+        "model": "Roadstar",
+        "year": "2020"
+    }
+    moons=GalileanMoons("Io", "Europa", "Ganymede", "Callisto")
+    kwargs = {
+        "movies": movies,
+        "car": car,
+        "moons": moons
+    }
+    return render_template(
+            "data_structures.html", **kwargs
+        )
+    
