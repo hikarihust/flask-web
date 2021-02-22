@@ -2,3 +2,5 @@
                 
 Coding the page structure with HTML
 Include images in our HTML site
+Finishing the header and navigation
+    
