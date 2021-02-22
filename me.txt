@@ -28,4 +28,8 @@ Style the page footer
     Open Browser to check: 
         http://127.0.0.1:5000
         http://127.0.0.1:5000/fancy
+Using render_template to send longer HTML strings
+    Open Browser
+    http://127.0.0.1:5000
+    http://127.0.0.1:5000/second
     
