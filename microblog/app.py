@@ -80,4 +80,8 @@ def render_data_structures():
     return render_template(
             "data_structures.html", **kwargs
         )
-    
+
+@app.route("/conditionals-basics")
+def render_conditionals():
+    company = True
+    return render_template("conditionals_basics.html", company=company)
