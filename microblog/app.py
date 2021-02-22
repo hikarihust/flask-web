@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+import datetime
+from flask import Flask, render_template, request
 from jinja2 import Template
 
 app = Flask(__name__)
@@ -10,8 +11,11 @@ class GalileanMoons:
         self.third=third
         self.fourth=fourth
     
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 def home():
+    if request.method == "POST":
+        entry_content = request.form.get("content")
+        formatted_date = datetime.datetime.today().strftime("%Y-%m-%d")
     return render_template("home.html")
 
 @app.route("/first")

@@ -49,3 +49,6 @@ Using loops in Jinja2
     http://127.0.0.1:5000/for-loop
     http://127.0.0.1:5000/for-loop/conditionals
 Setting up our Microblog project with Flask
+    http://127.0.0.1:5000
+Receiving form data using Flask
+    
