@@ -52,3 +52,4 @@ Setting up our Microblog project with Flask
     http://127.0.0.1:5000
 Receiving form data using Flask
 Displaying past entries in the Microblog project
+Formatting dates correctly in our entries
