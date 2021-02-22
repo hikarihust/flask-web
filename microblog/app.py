@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from jinja2 import Template
 
 app = Flask(__name__)
 
@@ -10,3 +11,14 @@ def hello_world():
 @app.route("/second")
 def hello_world_fancy():
     return render_template("second_page.html")
+
+@app.route("/template")
+def template():
+    template=Template("Hello, {{name}}")
+    return template.render(name="John")
+
+@app.route("/jinja")
+def jinja_intro():
+    return render_template(
+            "jinja_intro.html", name="John", template_name="Jinja2"
+        )
