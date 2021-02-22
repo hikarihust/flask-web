@@ -9,3 +9,23 @@ Style the header and menu bar
 Style HTML forms and inputs
 Style the micro blog entries
 Style the page footer
+
+                                Backend Development with Flask
+    
+"Hello, world" with Flask
+    pip3 freeze
+        check list libraries installed 
+    pip3 install virtualenv 
+        Use to install virtual environment 
+    virtualenv is a tool to create virtual environment
+    virtualenv venv --python=python3
+    source venv/bin/activate
+    Windows: .\venv\Scripts\activate
+    pip3 install Flask
+    set FLASK_APP=app.py
+    set FLASK_ENV=development
+    flask run 
+    Open Browser to check: 
+        http://127.0.0.1:5000
+        http://127.0.0.1:5000/fancy
+    
