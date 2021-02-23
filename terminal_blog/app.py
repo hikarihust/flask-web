@@ -1,10 +1,5 @@
-import pymongo
+from models.post import Post
 
-URI = "mongodb://127.0.0.1:27017"
-client = pymongo.MongoClient(URI)
-database = client['fullstack']
-collection = database['students']
+post = Post("Post1 title", "Post1 content", "Post1 author")
 
-students = [student["mark"] for student in collection.find({}) if student["mark"] == 99.0]
-
-print(students)
+print(post.content)
