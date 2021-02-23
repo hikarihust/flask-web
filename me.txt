@@ -99,4 +99,15 @@ Deploying our app to Heroku
     git commit -am "deploy to heroku"
     git push heroku master
     Open:  https://microblog-flask-web.herokuapp.com
+Hiding the MongoDB connection details from our code
+    pip3 install python-dotenv
+    .env file
+    .gitignore file to ignore .env
+    git init
+    heroku git:remote -a microblog-flask-web
+    git add .
+    git commit -am "Hiding the MongoDB connection details"
+    git push -f heroku master
+    Set environment variable
+        Heroku -> Settings -> Reveal Config Vars
     

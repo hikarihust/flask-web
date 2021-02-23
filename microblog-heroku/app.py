@@ -1,9 +1,12 @@
+import os
 import datetime
 from flask import Flask, render_template, request
 from jinja2 import Template
 from pymongo import MongoClient
 import urllib.parse
+from dotenv import load_dotenv
 
+load_dotenv()
 
 class GalileanMoons:
     def __init__(self, first, second, third, fourth):
@@ -14,9 +17,9 @@ class GalileanMoons:
 
 def create_app():
     app = Flask(__name__)
-    username = urllib.parse.quote_plus('quang')
-    password = urllib.parse.quote_plus("123456@")
-    url="mongodb+srv://{}:{}@microblog-application.jhlkz.mongodb.net/test".format(username, password)
+    username = urllib.parse.quote_plus(os.environ.get("USERNAME"))
+    password = urllib.parse.quote_plus(os.environ.get("PASSWORD"))
+    url=os.environ.get("MONGODB_URI").format(username, password)
     client = MongoClient(url)
     app.db = client.microblog
 
