@@ -9,7 +9,8 @@ Style the header and menu bar
 Style HTML forms and inputs
 Style the micro blog entries
 Style the page footer
-
+        
+        ==================================================================================
                                 Backend Development with Flask
     
 "Hello, world" with Flask
@@ -80,3 +81,12 @@ Storing Microblog entries in MongoDB
     pip3 install pymongo[srv]
 Retrieving the Microblog entries from MongoDB
 How to use Flask's app factory pattern
+
+        ==================================================================================
+                                Deploying Flask Apps to Heroku
+    
+What is the requirements.txt file?
+    Dependencies our app
+    .\venv\Scripts\activate
+    pymongo
+    
