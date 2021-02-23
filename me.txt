@@ -89,4 +89,5 @@ What is the requirements.txt file?
     Dependencies our app
     .\venv\Scripts\activate
     pymongo
+Getting our app ready for Heroku
     
