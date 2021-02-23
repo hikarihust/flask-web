@@ -134,4 +134,6 @@ Creating a project that uses MongoDB and pymongo
     pip3 install pymongo
     pip3 freeze
     py .\app.py
+Simplifying lists in Python with list comprehension
+    students = [student for student in collection.find({})]
     
