@@ -111,3 +111,9 @@ Hiding the MongoDB connection details from our code
     Set environment variable
         Heroku -> Settings -> Reveal Config Vars
     
+        ==================================================================================
+                                A simple terminal Blog
+
+Installing MongoDB
+    https://www.mongodb.com/try/download/community
+    
