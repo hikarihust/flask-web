@@ -127,4 +127,11 @@ Introduction to MongoDB
     db.students.find({})
     db.students.insert({"item": "Chair", "price": 999, "age":25})
     db.students.remove({"item": "Chair"})
+Creating a project that uses MongoDB and pymongo
+    virtualenv venv --python=python3
+    source venv/bin/activate
+    Windows: .\venv\Scripts\activate
+    pip3 install pymongo
+    pip3 freeze
+    py .\app.py
     
