@@ -79,3 +79,4 @@ Accessing MongoDB with Compass and Atlas
 Storing Microblog entries in MongoDB
     pip3 install pymongo[srv]
 Retrieving the Microblog entries from MongoDB
+How to use Flask's app factory pattern
