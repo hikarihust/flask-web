@@ -90,4 +90,13 @@ What is the requirements.txt file?
     .\venv\Scripts\activate
     pymongo
 Getting our app ready for Heroku
+Deploying our app to Heroku
+    Create App: microblog-flask-web
+    heroku login
+    git init
+    heroku git:remote -a microblog-flask-web
+    git add .
+    git commit -am "deploy to heroku"
+    git push heroku master
+    Open:  https://microblog-flask-web.herokuapp.com
     
