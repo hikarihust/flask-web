@@ -116,4 +116,15 @@ Hiding the MongoDB connection details from our code
 
 Installing MongoDB
     https://www.mongodb.com/try/download/community
+Introduction to MongoDB
+    C:\Program Files\MongoDB\Server\4.4\bin>
+    mongo to start MongoDB
+    show dbs 
+        show Database list 
+    use fullstack 
+    show collections
+    db.students.insert({"name": "Jose", "mark": 99})
+    db.students.find({})
+    db.students.insert({"item": "Chair", "price": 999, "age":25})
+    db.students.remove({"item": "Chair"})
     
