@@ -197,3 +197,4 @@ Creating the login and register
 Finding blogs by a specific author
     db.blogs.find({})
 Allowing creation of blogs and posts
+Creating the static resources and templates
