@@ -160,3 +160,16 @@ Verifying that the Post methods all work
     Or
     Console: db.posts.find({}) to check post is inserted
 The Blog class and @classmethods
+Verifying the Blog methods all work
+    from models.blog import Blog
+    blog=Blog(
+            author="Jose",
+            title="Sample title",
+            description="Sample description"
+        )
+
+    blog.new_post()
+    blog.save_to_mongo()
+    from_database=Blog.from_mongo(blog.id)
+    print(blog.get_posts())
+    
