@@ -239,4 +239,9 @@ What are Flask Blueprints?
     py .\app.py
     http://127.0.0.1:5000/learning/rolf to check
 Creating our new app structure
-    
+Getting page content with requests
+    pip3 install beautifulsoup4
+    pip3 install requests
+    import requests
+    response = requests.get("https://www.johnlewis.com/ruark-mrx-bluetooth-wi-fi-connected-wireless-speaker/soft-grey/p3645548")
+    print(response.content)
