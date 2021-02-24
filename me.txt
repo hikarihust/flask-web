@@ -212,4 +212,14 @@ The user registration page
 Using Bootstrap for the first time for great styling
 Display a list of blogs
     db.blogs.insert({ "_id" : "6035d9a73303bd449b6eea57", "author" : "Quang", "title" : "Sample title", "description" : "Sample description", "author_id" : "8767e904d56e40d7a7aa23176f32ed53" })
+    http://127.0.0.1:4995/blogs
+    http://127.0.0.1:4995/blogs/8767e904d56e40d7a7aa23176f32ed53
+Displaying a list of posts
+    db.posts.remove({})
+    db.posts.insert({"_id": "6035b485059456412cc2ba7a", "blog_id": "6035d9a73303bd449b6eea57", "title": "Sample post title", "content": "Lorem ipsum", "created_date": ISODate("2020-03-10T00:00:00Z"), "author": "Quang"})
+    http://127.0.0.1:4995/posts/6035d9a73303bd449b6eea57
+        check having post
+    db.blogs.insert({ "_id" : "6035d9a73303bd449b6eea58", "author" : "Quang", "title" : "Sample title2", "description" : "Sample description2", "author_id" : "8767e904d56e40d7a7aa23176f32ed53" })
+    http://127.0.0.1:4995/posts/6035d9a73303bd449b6eea58
+        check do not have post
     
