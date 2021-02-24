@@ -238,4 +238,5 @@ What are Flask Blueprints?
     pip3 install Flask
     py .\app.py
     http://127.0.0.1:5000/learning/rolf to check
+Creating our new app structure
     
