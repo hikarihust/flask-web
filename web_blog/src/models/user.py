@@ -1,4 +1,6 @@
 import uuid
+from flask import session
+
 from src.common.database import Database
 
 
@@ -36,13 +38,20 @@ class User(object):
             # User doesn't exist, so we can create it
             new_user = cls(email, password)
             new_user.save_to_mongo()
+            session['email'] = email
             return True
         else:
             # User exists :(
             return False
 
-    def login(self):
-        pass
+    @staticmethod
+    def login(user_email):
+        # login_valid has already been called
+        session['email'] = user_email
+
+    @staticmethod
+    def logout():
+        session['email'] = None
 
     def get_blogs(self):
         pass

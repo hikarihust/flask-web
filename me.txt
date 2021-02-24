@@ -193,3 +193,4 @@ Python cls() and argument unpacking
     pip3 install pymongo
 Creating the User model for our application
 Starting developing the User model
+Creating the login and register
