@@ -245,3 +245,5 @@ Getting page content with requests
     import requests
     response = requests.get("https://www.johnlewis.com/ruark-mrx-bluetooth-wi-fi-connected-wireless-speaker/soft-grey/p3645548")
     print(response.content)
+Getting an element's content with BeautifulSoup
+    
