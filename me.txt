@@ -224,4 +224,6 @@ Displaying a list of posts
         check do not have post
 Creating new blogs (front-end)
     http://127.0.0.1:4995/blogs/new
+Finalising the application by allowing to create posts!
+    http://127.0.0.1:4995/posts/8a9ecbc752e546afad81ffeb8752b3de
     
