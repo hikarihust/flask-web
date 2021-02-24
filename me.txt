@@ -200,3 +200,10 @@ Allowing creation of blogs and posts
 Creating the static resources and templates
 Our first template in Jinja2
 Beginning CSS styling of pages
+The user login page
+    db.users.insert({"email": "test@test.com", "password": "password"})
+    db.users.insert({"email": "test1@test.com", "password": "password"})
+    db.users.find({})
+    Chrome: http://127.0.0.1:4995/login to check test@test.com
+    Firefox: http://127.0.0.1:4995/login to check test1@test.com
+    

@@ -2,8 +2,8 @@ import uuid
 from flask import session
 import datetime
 
-from src.common.database import Database
-from src.models.blog import Blog
+from common.database import Database
+from models.blog import Blog
 
 
 class User(object):
