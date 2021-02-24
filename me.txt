@@ -194,3 +194,6 @@ Python cls() and argument unpacking
 Creating the User model for our application
 Starting developing the User model
 Creating the login and register
+Finding blogs by a specific author
+    db.blogs.find({})
+    
