@@ -222,4 +222,6 @@ Displaying a list of posts
     db.blogs.insert({ "_id" : "6035d9a73303bd449b6eea58", "author" : "Quang", "title" : "Sample title2", "description" : "Sample description2", "author_id" : "8767e904d56e40d7a7aa23176f32ed53" })
     http://127.0.0.1:4995/posts/6035d9a73303bd449b6eea58
         check do not have post
+Creating new blogs (front-end)
+    http://127.0.0.1:4995/blogs/new
     
