@@ -246,4 +246,6 @@ Getting page content with requests
     response = requests.get("https://www.johnlewis.com/ruark-mrx-bluetooth-wi-fi-connected-wireless-speaker/soft-grey/p3645548")
     print(response.content)
 Getting an element's content with BeautifulSoup
+Using RegEx to get specific information from a string
+    https://stackoverflow.com/questions/2081640/what-exactly-do-u-and-r-string-flags-do-and-what-are-raw-string-literals/2081708#2081708
     
