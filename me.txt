@@ -172,4 +172,4 @@ Verifying the Blog methods all work
     blog.save_to_mongo()
     from_database=Blog.from_mongo(blog.id)
     print(blog.get_posts())
-    
+The menu and user interactions
