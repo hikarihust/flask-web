@@ -210,3 +210,6 @@ The user registration page
     http://127.0.0.1:4995/register to register quang@gmail.com 
     http://127.0.0.1:4995/login to login registered quang@gmail.com 
 Using Bootstrap for the first time for great styling
+Display a list of blogs
+    db.blogs.insert({ "_id" : "6035d9a73303bd449b6eea57", "author" : "Quang", "title" : "Sample title", "description" : "Sample description", "author_id" : "8767e904d56e40d7a7aa23176f32ed53" })
+    
