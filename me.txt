@@ -206,4 +206,7 @@ The user login page
     db.users.find({})
     Chrome: http://127.0.0.1:4995/login to check test@test.com
     Firefox: http://127.0.0.1:4995/login to check test1@test.com
+The user registration page
+    http://127.0.0.1:4995/register to register quang@gmail.com 
+    http://127.0.0.1:4995/login to login registered quang@gmail.com 
     
