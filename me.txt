@@ -140,3 +140,5 @@ Introduction to Object-Oriented Programming
 Creating our first class, the Post
 Creating a Database class for database interactions
 The last few Post methods
+Having default parameter values in Python methods
+    self.id = uuid.uuid4().hex if id is None else id
