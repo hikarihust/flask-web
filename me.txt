@@ -209,4 +209,4 @@ The user login page
 The user registration page
     http://127.0.0.1:4995/register to register quang@gmail.com 
     http://127.0.0.1:4995/login to login registered quang@gmail.com 
-    
+Using Bootstrap for the first time for great styling
