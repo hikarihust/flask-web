@@ -139,3 +139,4 @@ Simplifying lists in Python with list comprehension
 Introduction to Object-Oriented Programming
 Creating our first class, the Post
 Creating a Database class for database interactions
+The last few Post methods
