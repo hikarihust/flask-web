@@ -144,4 +144,10 @@ Having default parameter values in Python methods
     self.id = uuid.uuid4().hex if id is None else id
 Understanding dates in Python: the datetime module
     date=datetime.datetime.utcnow()
-    
+Verifying that the Post methods all work
+    post.save_to_mongo()
+    Then 
+        post.from_mongo('965ae76cb1364f60a62904ca48ea106f')
+        print(post.json())
+    Or
+    Console: db.posts.find({}) to check post is inserted

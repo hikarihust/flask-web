@@ -4,6 +4,11 @@ from models.post import Post
 
 Database.initialize()
 
-post = Post("Post1 title", "Post1 content", "Post1 author")
+post = Post(blog_id="123",
+            title="Another great post",
+            content="This is some sample content",
+            author="jose"
+            )
 
-print(post.content)
+post.from_mongo('965ae76cb1364f60a62904ca48ea106f')
+print(post.json())
