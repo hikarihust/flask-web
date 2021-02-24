@@ -177,4 +177,16 @@ Finally, running the application
     from menu import Menu
     menu = Menu()
     menu.run_menu()
+
+        ==================================================================================
+                                Our first web application
+
+How can we make our own API?What is Flask?
+    flask-web\web_blog
+    virtualenv venv --python=python3
+    source venv/bin/activate
+    Windows: .\venv\Scripts\activate
+    pip3 install Flask
+    in src folder
+        py .\app.py
     
