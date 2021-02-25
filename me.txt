@@ -291,3 +291,4 @@ Creating items through the web interface
 Styling our site using Bootstrap 4
 Creating the Items blueprint
 Creating a page to show all items
+Creating alerts through the web interface
