@@ -1,9 +1,8 @@
-from typing import Dict, List
+from typing import Dict
 from bs4 import BeautifulSoup
 import requests
 import re
 import uuid
-from common.database import Database
 from models.model import Model
 
 
@@ -42,11 +41,4 @@ class Item(Model):
             "tag_name": self.tag_name,
             "query": self.query
         }
-
-    @classmethod
-    def get_by_id(cls, _id) -> "Item":
-        return cls(**Database.find_one("items", {"_id": _id}))
-        
-    def save_to_mongo(self) -> None:
-        Database.insert(self.collection, self.json())
     

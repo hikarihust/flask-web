@@ -268,4 +268,5 @@ How to force a subclass to have properties of a parent class
     In Model class
         collection: str
         _id: str
+Type hinting the current object type in a method return
     
