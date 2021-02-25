@@ -264,3 +264,8 @@ Notifying users in a simple way when the price is reached
 What is an abstract class in Python?
 Making more methods generic
 Finishing up the Model superclass
+How to force a subclass to have properties of a parent class
+    In Model class
+        collection: str
+        _id: str
+    
