@@ -18,3 +18,12 @@ class Database:
     @classmethod
     def find_one(cls, collection: str, query: Dict) -> Dict:
         return cls.DATABASE[collection].find_one(query)
+    
+    @classmethod
+    def update(cls, collection: str, query: Dict, data: Dict) -> None:
+        cls.DATABASE[collection].update(query, data, upsert=True)
+    
+    @classmethod
+    def remove(cls, collection: str, query: Dict) -> Dict:
+        return cls.DATABASE[collection].remove(query)
+    

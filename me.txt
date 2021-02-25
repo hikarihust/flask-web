@@ -263,3 +263,4 @@ Notifying users in a simple way when the price is reached
     py .\app.py
 What is an abstract class in Python?
 Making more methods generic
+Finishing up the Model superclass
