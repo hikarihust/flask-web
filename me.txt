@@ -292,3 +292,16 @@ Styling our site using Bootstrap 4
 Creating the Items blueprint
 Creating a page to show all items
 Creating alerts through the web interface
+    http://127.0.0.1:5000/alerts/
+    http://127.0.0.1:5000/items/
+    http://127.0.0.1:5000/items/new
+    http://127.0.0.1:5000/alerts/new
+
+        ==================================================================================
+
+                            Developing a complete front-end with Bootstrap 4
+
+Introducing stores to our application
+    Union[str, Dict]
+    Có thể là str or Dict
+    
