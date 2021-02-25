@@ -45,6 +45,10 @@ class Item:
         items_from_db = Database.find("items", {})
         return [cls(**item) for item in items_from_db]
 
+    @classmethod
+    def get_by_id(cls, _id) -> "Item":
+        return cls(**Database.find_one("items", {"_id": _id}))
+        
     def save_to_mongo(self) -> None:
         Database.insert(self.collection, self.json())
     

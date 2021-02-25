@@ -14,4 +14,7 @@ class Database:
     @classmethod
     def find(cls, collection: str, query: Dict) -> pymongo.cursor:
         return cls.DATABASE[collection].find(query)
-    
+
+    @classmethod
+    def find_one(cls, collection: str, query: Dict) -> Dict:
+        return cls.DATABASE[collection].find_one(query)
