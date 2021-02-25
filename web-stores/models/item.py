@@ -4,9 +4,10 @@ import requests
 import re
 import uuid
 from common.database import Database
+from models.model import Model
 
 
-class Item:
+class Item(Model):
     def __init__(self, url: str, tag_name: str, query: Dict, _id: str = None):
         self.url = url
         self.tag_name = tag_name

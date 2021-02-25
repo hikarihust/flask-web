@@ -261,4 +261,4 @@ Retrieving Items from MongoDB
 Notifying users in a simple way when the price is reached
     py .\app.py
     py .\app.py
-    
+What is an abstract class in Python?
