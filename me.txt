@@ -289,4 +289,4 @@ Creating items through the web interface
     db.items.find({}).pretty()
     to check inserted data
 Styling our site using Bootstrap 4
-    
+Creating the Items blueprint
