@@ -1,22 +1,10 @@
-import requests
-from bs4 import BeautifulSoup
-import re
+from models.item import Item
 
 
-URL = "https://www.johnlewis.com/sony-ht-st5000-wi-fi-bluetooth-nfc-sound-bar-with-wireless-subwoofer-high-resolution-audio-dolby-atmos-chromecast-multiroom/p3234220"
-TAG_NAME = "p"
-QUERY = {"class": "price price--large"}
+ipad = Item(
+    "https://www.johnlewis.com/2020-apple-ipad-pro-11-inch-a12z-bionic-ios-wi-fi-1tb/space-grey/p4949061",
+    "p",
+    {"class": "price price--large"}
+)
 
-request = requests.get(URL)
-content = request.content
-soup = BeautifulSoup(content, "html.parser")
-element = soup.find(TAG_NAME, QUERY)
-string_price = element.text.strip()
-
-pattern = re.compile(r"(\d+,?\d+\.\d+)")
-match = pattern.search(string_price)
-found_price = match.group(1)
-without_commas = found_price.replace(",", "")
-price = float(without_commas)
-
-print(price)
+print(ipad.load_price())

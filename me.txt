@@ -248,4 +248,4 @@ Getting page content with requests
 Getting an element's content with BeautifulSoup
 Using RegEx to get specific information from a string
     https://stackoverflow.com/questions/2081640/what-exactly-do-u-and-r-string-flags-do-and-what-are-raw-string-literals/2081708#2081708
-    
+Creating our Item model
