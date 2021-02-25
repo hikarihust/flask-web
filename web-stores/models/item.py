@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 import re
 import uuid
+from common.database import Database
 
 
 class Item:
@@ -38,4 +39,7 @@ class Item:
             "tag_name": self.tag_name,
             "query": self.query
         }
+    
+    def save_to_mongo(self) -> None:
+        Database.insert(self.collection, self.json())
     

@@ -253,3 +253,7 @@ Adding type hinting to our application so far
     def __init__(self, url: str, tag_name: str, query: Dict)
     load_price(self) -> float
 Preparing our Item model for saving in MongoDB
+Inserting Items into MongoDB
+    pip3 install pymongo
+    use pricing 
+    db.items.find({}).pretty()

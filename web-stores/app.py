@@ -7,4 +7,4 @@ ipad = Item(
     {"class": "price price--large"}
 )
 
-print(ipad.load_price())
+ipad.save_to_mongo()
