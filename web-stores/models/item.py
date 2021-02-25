@@ -8,12 +8,14 @@ from models.model import Model
 
 
 class Item(Model):
+    collection = "items"
+
     def __init__(self, url: str, tag_name: str, query: Dict, _id: str = None):
+        super().__init__()
         self.url = url
         self.tag_name = tag_name
         self.query = query
         self.price = None
-        self.collection = "items"
         self._id = _id or uuid.uuid4().hex
 
     def __repr__(self):
@@ -40,11 +42,6 @@ class Item(Model):
             "tag_name": self.tag_name,
             "query": self.query
         }
-    
-    @classmethod
-    def all(cls) -> List["Item"]:
-        items_from_db = Database.find("items", {})
-        return [cls(**item) for item in items_from_db]
 
     @classmethod
     def get_by_id(cls, _id) -> "Item":
