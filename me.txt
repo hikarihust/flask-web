@@ -257,3 +257,5 @@ Inserting Items into MongoDB
     pip3 install pymongo
     use pricing 
     db.items.find({}).pretty()
+Retrieving Items from MongoDB
+    

@@ -8,3 +8,7 @@ ipad = Item(
 )
 
 ipad.save_to_mongo()
+
+items_loaded = Item.all()
+print(items_loaded)
+print(items_loaded[0].load_price())

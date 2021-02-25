@@ -1,4 +1,4 @@
-from typing import Dict
+from typing import Dict, List
 from bs4 import BeautifulSoup
 import requests
 import re
@@ -40,6 +40,11 @@ class Item:
             "query": self.query
         }
     
+    @classmethod
+    def all(cls) -> List["Item"]:
+        items_from_db = Database.find("items", {})
+        return [cls(**item) for item in items_from_db]
+
     def save_to_mongo(self) -> None:
         Database.insert(self.collection, self.json())
     
