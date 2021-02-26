@@ -360,4 +360,4 @@ Linking the alert index to the edit page
         Item URL: https://www.johnlewis.com/2020-apple-ipad-pro-11-inch-a12z-bionic-ios-wi-fi-1tb/space-grey/p4949061
         Price limit: 5000
 Editing stores
-    
+Deleting alerts
