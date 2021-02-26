@@ -10,7 +10,7 @@
         <div class="list-group-item">
             <h4 class="list-group-item-heading">{{ alert.name }}</h4>
             <p >
-                <a href="{{ alert.item.url }}">{{ alert.item_id }}</a>
+                <a href="{{ alert.item.url }}">{{ alert.item.url }}</a> (last price £{{ alert.item.price }})
             </p>
         </div>
         {% endfor %}

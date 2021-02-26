@@ -19,6 +19,7 @@ def create_alert():
 
         store = Store.find_by_url(item_url)
         item = Item(item_url, store.tag_name, store.query)
+        item.load_price()
         item.save_to_mongo()
 
         alert_name = request.form['name']
