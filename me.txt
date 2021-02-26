@@ -344,3 +344,4 @@ Turning our models into dataclasses
 Giving names to alerts in our application
 Saving the last item price
 Creating stores through the web interface
+Editing alert properties
