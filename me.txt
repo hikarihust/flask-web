@@ -345,3 +345,18 @@ Giving names to alerts in our application
 Saving the last item price
 Creating stores through the web interface
 Editing alert properties
+Linking the alert index to the edit page
+    py .\app.py 
+    db.items.remove({})
+    db.alerts.remove({})
+    db.stores.remove({})
+    http://127.0.0.1:5000/stores/
+        Name: John Lewis
+        URL Prefix: https://www.johnlewis.com
+        tag_name: p
+        query: {"class": "price price--large"}
+    http://127.0.0.1:5000/alerts/new
+        Name: iPad
+        Item URL: https://www.johnlewis.com/2020-apple-ipad-pro-11-inch-a12z-bionic-ios-wi-fi-1tb/space-grey/p4949061
+        Price limit: 5000
+    
