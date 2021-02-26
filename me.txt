@@ -305,4 +305,13 @@ Introducing stores to our application
     Union[str, Dict]
     Có thể là str or Dict
 Getting rid of items
+Testing app with stores
+    use pricing
+    db.items.remove({})
+    db.alerts.remove({})
+    db.stores.remove({})
+    db.stores.insert({"_id": "123", "name": "John Lewis", "url_prefix": "https://www.johnlewis.com/", "tag_name": "p", "query": {"class": "price price--large"}})
+    http://127.0.0.1:5000/alerts/new
+        Item URL: https://www.johnlewis.com/2020-apple-ipad-pro-11-inch-a12z-bionic-ios-wi-fi-1tb/space-grey/p4949061
+    py .\alert_updater.py
     
