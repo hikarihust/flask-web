@@ -361,3 +361,4 @@ Linking the alert index to the edit page
         Price limit: 5000
 Editing stores
 Deleting alerts
+Deleting stores
