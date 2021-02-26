@@ -304,4 +304,5 @@ Creating alerts through the web interface
 Introducing stores to our application
     Union[str, Dict]
     Có thể là str or Dict
+Getting rid of items
     
