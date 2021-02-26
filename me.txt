@@ -340,4 +340,5 @@ Dataclasses in Python 3.7
     u = User('123', 'bob', 'password')
 
     print(u)
+Turning our models into dataclasses
     
