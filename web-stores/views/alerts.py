@@ -21,8 +21,9 @@ def create_alert():
         item = Item(item_url, store.tag_name, store.query)
         item.save_to_mongo()
 
+        alert_name = request.form['name']
         price_limit = float(request.form["price_limit"])
-        Alert(item._id, price_limit).save_to_mongo()
+        Alert(alert_name, item._id, price_limit).save_to_mongo()
     # What happens if it's a GET request
     return render_template("alerts/new_alert.html")
     

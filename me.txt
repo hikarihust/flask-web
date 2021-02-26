@@ -341,4 +341,4 @@ Dataclasses in Python 3.7
 
     print(u)
 Turning our models into dataclasses
-    
+Giving names to alerts in our application
