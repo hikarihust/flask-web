@@ -362,3 +362,22 @@ Linking the alert index to the edit page
 Editing stores
 Deleting alerts
 Deleting stores
+Registering users
+    After register a user...
+    1. We send the Browser a unique piece of data
+    2. The Browser stores it
+    3. Every time the Browser Access our pages, it sends us that same unique data
+    4. We know it's the same Browser because nobody else has Access to that unique piece of data
+    import models.user.errors as UserErrors
+    models/user package
+        __init__.py
+            from models.user.user import User
+            import models.user.errors as UserErrors
+    views
+        users.py
+            from models.user import User, UserErrors
+    py .\app.py
+    http://127.0.0.1:5000/users/register
+        register: jose@gmail.com and pwd is 123456
+    db.users.find({})
+    
