@@ -24,6 +24,23 @@ class User(Model):
             raise UserErrors.UserNotFoundError('A user with this e-mail was not found.')
 
     @classmethod
+    def is_login_valid(cls, email: str, password: str) -> bool:
+        """
+        This method verifies that an e-mail/password combo (as sent by the site forms) is valid or not.
+        Checks that the e-mail exists, and that the password associated to that e-mail is correct.
+        :param email: The user's email
+        :param password: The password
+        :return: True if valid, an exception otherwise
+        """
+        user = cls.find_by_email(email)
+
+        if not Utils.check_hashed_password(password, user.password):
+            # Tell the user that their password is wrong
+            raise UserErrors.IncorrectPasswordError("Your password was wrong.")
+
+        return True
+
+    @classmethod
     def register_user(cls, email: str, password: str) -> bool:
         """
         This method registers a user using e-mail and password.

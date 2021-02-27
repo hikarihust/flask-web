@@ -386,4 +386,6 @@ Encrypting passwords in Python with passlib
     py .\app.py
     http://127.0.0.1:5000/users/register to register
     db.users.find({}) to check password hashed 
+Logging in
+    http://127.0.0.1:5000/users/login
     
