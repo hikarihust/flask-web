@@ -380,4 +380,10 @@ Registering users
     http://127.0.0.1:5000/users/register
         register: jose@gmail.com and pwd is 123456
     db.users.find({})
+Encrypting passwords in Python with passlib
+    pip3 install passlib
+    db.users.remove({})
+    py .\app.py
+    http://127.0.0.1:5000/users/register to register
+    db.users.find({}) to check password hashed 
     

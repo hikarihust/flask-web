@@ -38,7 +38,7 @@ class User(Model):
             cls.find_by_email(email)
             raise UserErrors.UserAlreadyRegisteredError("The e-mail you used to register already exists.")
         except UserErrors.UserNotFoundError:
-            User(email, password).save_to_mongo()
+            User(email, Utils.hash_password(password)).save_to_mongo()
 
         return True
 
