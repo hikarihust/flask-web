@@ -3,6 +3,7 @@ from typing import Dict
 import uuid
 
 from models.item import Item
+from models.user import User
 from models.model import Model
 
 
@@ -12,17 +13,20 @@ class Alert(Model):
     name: str
     item_id: str
     price_limit: str
+    user_email: str
     _id: str = field(default_factory=lambda: uuid.uuid4().hex)
 
     def __post_init__(self):
         self.item = Item.get_by_id(self.item_id)
+        self.user = User.find_by_email(self.user_email)
 
     def json(self) -> Dict:
         return {
             "_id": self._id,
             "name": self.name,
             "price_limit": self.price_limit,
-            "item_id": self.item._id
+            "item_id": self.item._id,
+            "user_email": self.user_email
         }
 
     def load_item_price(self) -> float:
