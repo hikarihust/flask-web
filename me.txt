@@ -410,4 +410,4 @@ Limiting actions to admins only
         register: jose@gmail.com and pwd is 123456
         register: rolf@gmail.com and pwd is 123456
     http://127.0.0.1:5000/stores/ as jose and rolf to check
-    
+Logging out

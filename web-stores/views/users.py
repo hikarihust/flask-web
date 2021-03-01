@@ -20,7 +20,11 @@ def login_user():
             return e.message
 
     return render_template("users/login.html")  # Send the user an error if their login was invalid
-    
+
+@user_blueprint.route('/logout')
+def lgout_user():
+    session['email'] = None
+    return redirect(url_for('.login_user'))
 
 @user_blueprint.route('/register', methods=['GET', 'POST'])
 def register_user():
