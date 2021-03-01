@@ -404,4 +404,10 @@ Viewing only your own alerts
         Price limit: 5000
 Limiting some pages only to logged in users
 Adding a navigation bar using Bootstrap
+Limiting actions to admins only
+    pip3 install python-dotenv
+    http://127.0.0.1:5000/users/register
+        register: jose@gmail.com and pwd is 123456
+        register: rolf@gmail.com and pwd is 123456
+    http://127.0.0.1:5000/stores/ as jose and rolf to check
     
