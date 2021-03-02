@@ -5,7 +5,12 @@ import pymongo
 
 class Database:
     URI = "mongodb://127.0.0.1:27017/pricing"
-    DATABASE = pymongo.MongoClient(URI).get_default_database()
+    DATABASE = None
+
+    @staticmethod
+    def initialize():
+        client = pymongo.MongoClient(Database.URI)
+        Database.DATABASE = client.get_default_database()
 
     @classmethod
     def insert(cls, collection: str, data: Dict) -> None:
