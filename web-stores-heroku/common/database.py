@@ -1,6 +1,7 @@
 import os
 from typing import Dict
 import pymongo
+import urllib.parse
 
 
 class Database:
@@ -9,6 +10,9 @@ class Database:
 
     @staticmethod
     def initialize():
+        username = urllib.parse.quote_plus(os.environ.get("USERNAME"))
+        password = urllib.parse.quote_plus(os.environ.get("PASSWORD"))
+        URI=os.environ.get("MONGODB_URI").format(username, password)
         client = pymongo.MongoClient(Database.URI)
         Database.DATABASE = client.get_default_database()
 

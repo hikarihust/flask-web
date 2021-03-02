@@ -433,10 +433,26 @@ Prepare
 Getting values from environment variables in Python
     os.environ.get('KEY')
 Setting the environment variables in Heroku
+    https://mlab.com/
+    Create New Cluster
+    Cloud Provider & Region
+        AWS, Singapore 
+    Cluster Tier M0 Sandbox (Shared RAM, 512 MB Storage)
+    Cluster Name: Pricing
+    NetWork Access: 0.0.0.0/0  (includes your current IP address)
+    Database Access -> Add New Database User
+        username: quang 
+        pwd: 123456@
+    Cluster - Connect 
+        Connect using MongoDB Compass and download: mongodb-compass-1.25.0-win32-x64.exe
+        mongodb+srv://quang:123456@@pricing.jhlkz.mongodb.net/test
     Heroku -> pricing-service-web -> Settings -> Reveal Config Vars
         ADMIN=jose@gmail.com
         MAILGUN_API_KEY=***************
         MAILGUN_DOMAIN=*******************
+        USERNAME=quang
+        PASSWORD=123456@
+        MONGODB_URI=mongodb+srv://{}:{}@pricing.jhlkz.mongodb.net/test
 Setting up Heroku required files in our project so Heroku knows what to run
     runtime.txt
     Procfile
