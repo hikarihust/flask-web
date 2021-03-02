@@ -432,3 +432,9 @@ Creating a new Heroku app
 Prepare 
 Getting values from environment variables in Python
     os.environ.get('KEY')
+Setting the environment variables in Heroku
+    Heroku -> pricing-service-web -> Settings -> Reveal Config Vars
+        ADMIN=jose@gmail.com
+        MAILGUN_API_KEY=***************
+        MAILGUN_DOMAIN=*******************
+    
