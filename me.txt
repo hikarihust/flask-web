@@ -430,3 +430,5 @@ Creating the landing page
 Creating a new Heroku app
     Name: pricing-service-web
 Prepare 
+Getting values from environment variables in Python
+    os.environ.get('KEY')
