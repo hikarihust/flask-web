@@ -422,3 +422,11 @@ Sending e-mail with Mailgun
         Price limit: 3000
     py alert_updater.py 
 Creating the landing page
+
+        ==================================================================================
+
+                            Simple development-stage deployments to Heroku
+
+Creating a new Heroku app
+    Name: pricing-service-web
+Prepare 
