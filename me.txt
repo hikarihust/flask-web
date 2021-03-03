@@ -486,4 +486,10 @@ Configuring our new user
             pwd: 123456
         or by Tera Term
     sudo apt-get update 
+Installing MongoDB in Ubuntu
+    sudo apt install mongodb
+    sudo systemctl status mongodb
+    sudo systemctl disable mongodb
+    sudo systemctl start mongodb
+    mongo
     
