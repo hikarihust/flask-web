@@ -1,0 +1,16 @@
+[Unit]
+Description=uWSGI Pricing Service
+
+[Service]
+User=jose
+Group=jose
+WorkingDirectory=/var/www/html/pricing-service
+Environment=MONGODB_URI=mongodb://127.0.0.1:27017/fullstack
+ExecStart=/var/www/html/pricing-service/venv/bin/uwsgi --master --emperor /var/www/html/pricing-service/uwsgi.ini --die-on-term --uid jose --gid jose --logto /var/www/html/pricing-service/log/emperor.log
+Restart=always
+KillSignal=SIGQUIT
+Type=notify
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target
