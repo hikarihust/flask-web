@@ -492,4 +492,25 @@ Installing MongoDB in Ubuntu
     sudo systemctl disable mongodb
     sudo systemctl start mongodb
     mongo
+Getting our application code
+    sudo mkdir -p /var/www/html/pricing-service
+    ls -la /var/www/html
+    sudo chown jose:jose /var/www/html/pricing-service
+    cd /var/www/html/pricing-service
+    mkdir deploy
+    git clone https://github.com/vudinhquang/flask-web.git .
+    cd ../
+    cp -r deploy/web-stores-server/* .
+    mkdir log
+    Installing Python in Ubuntu
+        The required packages and the Python package:
+            sudo apt install software-properties-common
+            sudo add-apt-repository ppa:deadsnakes/ppa
+            sudo apt install build-essential python3.7-dev python3-pip python3.7
+        Install pipenv: 
+            pip3 install --user pipenv
+            echo "PATH=$HOME/.local/bin:$PATH" >> ~/.bashrc
+            source ~/.bashrc
+            pipenv install
+    pipenv run python app.py
     
