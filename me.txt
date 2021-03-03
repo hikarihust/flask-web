@@ -472,4 +472,18 @@ Creating a non-root user
     Full Name: Jose User 
     which adduser
     echo $PATH 
+Configuring our new user
+    visudo
+    jose ALL=(ALL:ALL) ALL
+    vi /etc/ssh/sshd_config
+        PasswordAuthentication yes
+            make sure to set it as yes so that you can use your password to login in the
+            future. It should be set to yes already, however, there are some platforms that enforces
+            SSH key authentication and set it to no instead
+        AllowUsers jose
+    login with user name and password: jose, 123456
+        May be by: ssh jose@3.137.171.34
+            pwd: 123456
+        or by Tera Term
+    sudo apt-get update 
     
