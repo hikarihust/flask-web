@@ -465,4 +465,11 @@ Setting up Heroku required files in our project so Heroku knows what to run
 
 Creating a Instance and Prepare
     Ubuntu 18.04
+Creating a non-root user
+    sudo su -
+    adduser jose
+    password: 123456
+    Full Name: Jose User 
+    which adduser
+    echo $PATH 
     
